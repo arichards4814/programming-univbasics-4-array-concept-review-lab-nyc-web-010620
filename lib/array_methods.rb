@@ -28,5 +28,17 @@ return highest
 end
 
 def find_min_value(array)
-  
+  count = 0
+lowest = array[count]
+
+while array[count] do
+  if array[count] < lowest
+    lowest = array[count]
+  end
+
+count = count + 1;
+end
+
+return lowest
+
 end
