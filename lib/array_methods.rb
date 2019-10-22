@@ -11,11 +11,11 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  # Add your solution here
+  
   count = 0
   highest = 0
   while array[count] do
-      if array[count] <= array[count + 1]
+      if array[count] >= array[count + 1]
         highest = array[count]
       else
         highest = array[count + 1]
@@ -30,7 +30,7 @@ def find_min_value(array)
   count = 0
   lowest = 0
   while array[count] do
-      if array[count] < array[count + 1]
+      if array[count] <= array[count + 1]
         lowest = array[count]
       else
         lowest = array[count + 1]
