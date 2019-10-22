@@ -19,12 +19,15 @@ def find_max_value(array)
     
       if array[count] >= array[count + 1]
         highest = array[count]
+        puts highest
       else
         highest = array[count + 1]
+        puts highest
       end
     
   count += 1
   end
+  puts highest
   return highest
   
   
