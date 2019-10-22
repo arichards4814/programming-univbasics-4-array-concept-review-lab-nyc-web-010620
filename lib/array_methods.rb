@@ -23,6 +23,7 @@ while array[count] do
 count = count + 1;
 end
 
+return higest
 
 end
 
