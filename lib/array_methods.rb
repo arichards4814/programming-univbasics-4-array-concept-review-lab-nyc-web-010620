@@ -15,12 +15,13 @@ def find_max_value(array)
   count = 0
   highest = 0
   while array[count] do
+    if array[count] != nil || array[count + 1] != nil
       if array[count] > array[count + 1]
         highest = array[count]
       else
         highest = array[count + 1]
       end
-    
+    end
   count += 1
   end
   return highest
